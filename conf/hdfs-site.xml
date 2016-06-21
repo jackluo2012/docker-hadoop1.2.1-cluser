@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+    <property>
+	<name>dfs.name.dir</name>
+	<value>/home/hadoop/name1</value> #hadoop的name目录路径
+ 	<description>  </description>
+    </property>
+    <property>
+	 <name>dfs.data.dir</name>
+         <value>/home/hadoop/data1</value>
+	 <description> </description>
+    </property>
+    <property>
+  	<name>dfs.replication</name>
+  	<!-- 我们的集群又两个结点，所以rep两份 -->
+  	<value>2</value>
+    </property>
+    <property>	<!--是否进行权限检查-->
+        <name>dfs.permissions</name>
+        <value>false</value>
+    </property>
+</configuration>
