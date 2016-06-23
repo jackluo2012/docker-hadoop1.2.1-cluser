@@ -30,3 +30,4 @@ done
 
 # get into hadoop master container
 sudo docker exec -it hadoop-master start-hadoop.sh
+sudo docker exec -it hadoop-master /bin/bash
